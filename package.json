@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-starter",
+  "version": "0.0.1",
+  "description": "NextJS with TypeScript + styled-components starter app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && next export"
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "styled-components"
+  ],
+  "author": "apolineaire",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-unfetch": "3.0.0",
+    "next": "9.3.4",
+    "next-offline": "5.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "13.11.0",
+    "@types/react": "16.9.32",
+    "typescript": "3.8.3"
+  }
+}
