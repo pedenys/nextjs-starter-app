@@ -4,11 +4,10 @@ Minimalist starter template for NextJS app with TypeScript and styled-components
 
 ## What's in the box
 
-- NextJS 9.3
+- [NextJS 9.4](https://github.com/apolineaire/nextjs-starter-app.git)
 - TypeScript
 - styled-components with global styles and theme
 - PWA ready with `next-offline` (see `next.config.js`)
-- isomorphic-unfetch for all naughty SSR/CSR things
 - AppHead component to handle `<head>` config
 - `.prettierrc` ready to be overwritten
 
