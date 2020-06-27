@@ -8,9 +8,10 @@ Minimalist starter template for NextJS app with TypeScript and emotion.
 
 - [NextJS 9.4](https://nextjs.org/blog/next-9-4)
 - TypeScript
-- `emotion` with global styles and theme
+- [emotion](https://github.com/emotion-js/emotion) with global styles and theme
 - PWA ready with `next-offline`
 - AppHead component to handle `<head>` config
+- [husky](https://github.com/typicode/husky) with pre-commit running [prettier](https://github.com/prettier/prettier) and tsc
 - `.prettierrc` ready to be overwritten
 
 ## How to

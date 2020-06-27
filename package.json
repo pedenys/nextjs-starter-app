@@ -8,7 +8,8 @@
     "deploy": "next build && next export",
     "dev": "next",
     "prettier-format": "prettier --config .prettierrc './src/**/*.{ts,tsx,json}' --write",
-    "start": "next start"
+    "start": "next start",
+    "ts-check": "tsc --noEmit --pretty"
   },
   "keywords": [
     "nextjs",
@@ -35,7 +36,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier-format"
+      "pre-commit": "npm run prettier-format && npm run ts-check"
     }
   }
 }
