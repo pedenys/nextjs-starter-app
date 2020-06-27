@@ -1,6 +1,6 @@
 import App from "next/app"
-import { ThemeProvider } from "styled-components"
-import AppTheme from "../theme/AppTheme"
+import { ThemeProvider } from "emotion-theming"
+import { AppTheme } from "../theme"
 import GlobalTheme from "../theme/GlobalTheme"
 
 class MyApp extends App {

@@ -1,7 +1,7 @@
 {
   "name": "nextjs-starter",
   "version": "0.0.1",
-  "description": "NextJS with TypeScript + styled-components starter app",
+  "description": "NextJS with TypeScript + emotion starter app",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -12,16 +12,18 @@
   "keywords": [
     "nextjs",
     "typescript",
-    "styled-components"
+    "emotion"
   ],
   "author": "apolineaire",
   "license": "ISC",
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
     "next": "^9.3.4",
     "next-offline": "^5.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "styled-components": "^5.1.0"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@types/node": "^13.11.0",
