@@ -1,9 +1,9 @@
-import styled, { CreateStyled } from "@emotion/styled"
+import styled, { CreateStyled } from '@emotion/styled'
 
 export const AppTheme = {
   colors: {
     //   add colors
-    primary: "#00007D",
+    primary: '#00007D',
   },
 }
 

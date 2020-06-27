@@ -4,10 +4,12 @@
   "description": "NextJS with TypeScript + emotion starter app",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
     "build": "next build",
+    "deploy": "next build && next export",
+    "dev": "next",
+    "prettier-format": "prettier --config .prettierrc './src/**/*.{ts,tsx,json}' --write",
     "start": "next start",
-    "deploy": "next build && next export"
+    "ts-check": "tsc --noEmit --pretty"
   },
   "keywords": [
     "nextjs",
@@ -20,8 +22,10 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "emotion-theming": "^10.0.27",
+    "husky": "^4.2.5",
     "next": "^9.3.4",
     "next-offline": "^5.0.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -29,5 +33,10 @@
     "@types/node": "^13.11.0",
     "@types/react": "^16.9.32",
     "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier-format && npm run ts-check"
+    }
   }
 }
