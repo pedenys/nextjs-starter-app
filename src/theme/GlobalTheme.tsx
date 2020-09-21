@@ -14,7 +14,6 @@ const globalCss = css`
   body {
     font-size: 100%;
     font-size: 40px;
-    color: hotpink;
   }
 `
 
