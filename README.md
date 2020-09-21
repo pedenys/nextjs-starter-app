@@ -6,7 +6,7 @@ Minimalist starter template for NextJS app with TypeScript and emotion.
 
 ## What's in the box
 
-- [NextJS 9.4](https://nextjs.org/blog/next-9-4)
+- [NextJS 9.5](https://nextjs.org/blog/next-9-5)
 - TypeScript
 - [emotion](https://github.com/emotion-js/emotion) with global styles and theme
 - PWA ready with `next-offline`
