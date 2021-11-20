@@ -1,42 +1,43 @@
 {
-  "name": "nextjs-starter",
-  "version": "0.0.1",
-  "description": "NextJS with TypeScript + emotion starter app",
-  "main": "index.js",
-  "scripts": {
-    "build": "next build",
-    "deploy": "next build && next export",
-    "dev": "next",
-    "prettier-format": "prettier --config .prettierrc './src/**/*.{ts,tsx,json}' --write",
-    "start": "next start",
-    "ts-check": "tsc --noEmit --pretty"
-  },
+  "name": "my-app",
+  "private": true,
+  "author": "pedenys",
+  "license": "ISC",
   "keywords": [
     "nextjs",
     "typescript",
-    "emotion"
+    "starter"
   ],
-  "author": "pedenys",
-  "license": "ISC",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "precommit": "npm run lint && npm run prettier && npm run ts-check",
+    "prepare": "husky install",
+    "prettier": "prettier --config .prettierrc './**/*.{ts,tsx,json}' --write",
+    "start": "next start",
+    "ts-check": "tsc --noEmit --pretty"
+  },
+  "lint-staged": {
+    "**/*": "npm run precommit"
+  },
   "dependencies": {
-    "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
-    "emotion-theming": "^10.0.27",
-    "husky": "^4.2.5",
-    "next": "^11.1.1",
-    "next-offline": "^5.0.0",
-    "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "next": "12.0.4",
+    "next-pwa": "^5.4.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@types/node": "^13.13.21",
-    "@types/react": "^16.9.49",
-    "typescript": "^3.9.7"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier-format && npm run ts-check"
-    }
+    "@types/node": "16.11.9",
+    "@types/react": "17.0.35",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.0.3",
+    "prettier": "2.4.1",
+    "typescript": "4.5.2"
   }
 }

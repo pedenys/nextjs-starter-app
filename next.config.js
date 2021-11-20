@@ -1,10 +1,10 @@
-const withOffline = require('next-offline')
+/** @type {import('next').NextConfig} */
+const withPWA = require('next-pwa')
 
-const nextConfig = {
-   webpack: (config) => {
-      //    do webpack things
-      return config
-   },
-}
-
-module.exports = withOffline(nextConfig)
+module.exports = withPWA({
+  pwa: {
+    dest: 'public',
+    disable: process.env.NODE_ENV === 'development',
+  },
+  reactStrictMode: true,
+})
